@@ -1,17 +1,26 @@
 .app {
     background: #f1f1f1;
-    
+    display: grid;
+    grid-template-areas:
+    "encabezado"
+    "contenido"
+    "rodapie";    
+    /* Lo siguiente seria el tama;o total de la pantalla del navegador */
+    grid-template-columns: auto; 
+    grid-template-rows: 50px 100vh auto;
 }
 
 .encabezado {
-
+    
+    grid-area: encabezado;
     
 }
 .contenido {
-
+    
+    grid-area: contenido;
 }
 
 .rodapie { 
-
     
+    grid-area: rodapie;
 }
